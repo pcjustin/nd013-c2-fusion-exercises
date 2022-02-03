@@ -155,6 +155,7 @@ def print_vfov_lidar(frame, lidar_name):
     # compute and print vfov in degrees
     print(vfov_rad*180/np.pi)
 
+    print(len(calib_lidar.beam_inclinations))
 
 # Example C1-3-2 : display camera image
 def display_image(frame):
