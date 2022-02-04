@@ -13,6 +13,29 @@ This directory contains: `examples`, `exercises/starter`, and `exercises/solutio
 
 ## Environment
 
+Install develeopment packages below.
+
+```
+sudo apt install \
+    dpkg-dev \
+	build-essential \
+	python3-dev \
+	freeglut3-dev \
+	libgl1-mesa-dev \
+	libglu1-mesa-dev \
+	libgstreamer-plugins-base1.0-dev \
+	libgtk-3-dev \
+	libjpeg-dev \
+	libnotify-dev \
+	libpng-dev \
+	libsdl2-dev \
+	libsm-dev \
+	libtiff-dev \
+	libwebkit2gtk-4.0-dev \
+	libxtst-dev \
+	libgtk2.0-dev
+```
+
 Udacity students can make use of the pre-configured workspace environment within the classroom. Alternatively, you can create an environment using the `requirements.txt` file included in this repository, using a command like `pip install -r requirements.txt` if you have pip installed, or creating an Anaconda environment in similar fashion.
 
 ### Waymo Open Dataset Reader
