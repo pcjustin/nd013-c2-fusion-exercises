@@ -61,7 +61,11 @@ def range_image_to_point_cloud(frame, lidar_name, vis=True):
     width = ri_range.shape[1]
     extrinsic = np.array(calibration.extrinsic.transform).reshape(4,4)
     az_correction = math.atan2(extrinsic[1,0], extrinsic[0,0])
+    print(round(az_correction*180/np.pi, 2))
     azimuth = np.linspace(np.pi,-np.pi,width) - az_correction
+    print(azimuth*180/np.pi)
+    az_center = int(len(azimuth)/2)
+    print(round(azimuth[az_center], 2))
 
     # expand inclination and azimuth such that every range image cell has its own appropriate value pair
     azimuth_tiled = np.broadcast_to(azimuth[np.newaxis,:], (height,width))
